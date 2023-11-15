@@ -1,7 +1,7 @@
-﻿using System;
+﻿using org.mariuszgromada.math.mxparser;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using org.mariuszgromada.math.mxparser;
 
 namespace Calc
 {
@@ -175,15 +175,15 @@ namespace Calc
             catch { }
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs  e)
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 buttonEqual_Click(sender, e);
             }
         }
-        
-        private void Form1_KeyUp(object sender, KeyEventArgs  e)
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.C)
             {
@@ -239,14 +239,14 @@ namespace Calc
         private void buttonLog_Click(object sender, EventArgs e)
         {
             addDigitButtonClick("log2()");
-            input.SelectionStart = input.Text.Length-1;
+            input.SelectionStart = input.Text.Length - 1;
             input.Focus();
         }
 
         private void buttonSQRT_Click(object sender, EventArgs e)
         {
             addDigitButtonClick("√()");
-            input.SelectionStart = input.Text.Length-1;
+            input.SelectionStart = input.Text.Length - 1;
             input.Focus();
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace Calc
 {
-    
+
     partial class main
     {
         private System.ComponentModel.IContainer components = null;
