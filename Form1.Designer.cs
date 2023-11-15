@@ -1,23 +1,9 @@
-﻿    
-
-namespace Calc
+﻿namespace Calc
 {
-
+    
     partial class main
     {
-        /// <summary>
-        /// Обязательная переменная конструктора.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Освободить все используемые ресурсы.
-        /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>]
-        /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
@@ -48,24 +34,8 @@ namespace Calc
             this.buttonMultiply = new System.Windows.Forms.Button();
             this.buttonDivide = new System.Windows.Forms.Button();
             this.buttonBackSpace = new System.Windows.Forms.Button();
+            this.input = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
-            // 
-            // input
-            // 
-            this.input = new System.Windows.Forms.TextBox();
-            this.input.BackColor = System.Drawing.SystemColors.Control;
-            this.input.Font = new System.Drawing.Font("Arial", 48F);
-            this.input.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.input.Location = new System.Drawing.Point(0, 0);
-            this.input.Name = "input";
-            this.input.Size = new System.Drawing.Size(628, 150);
-            this.input.TabIndex = 27;
-            this.input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.input.TextChanged += new System.EventHandler(this.input_TextChanged);
-            this.input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.input.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
-            this.input.AutoSize = false;
-            this.input.Height = 150;
             // 
             // buttonLog
             // 
@@ -607,6 +577,25 @@ namespace Calc
             this.buttonBackSpace.UseVisualStyleBackColor = false;
             this.buttonBackSpace.Click += new System.EventHandler(this.buttonBackSpace_Click);
             // 
+            // input
+            //
+            this.input.BackColor = System.Drawing.SystemColors.Control;
+            this.input.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.input.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.input.Font = new System.Drawing.Font("Arial", 44F);
+            this.input.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.input.Location = new System.Drawing.Point(0, 0);
+            this.input.MaxLength = 30;
+            this.input.Name = "input";
+            this.input.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.input.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.input.Size = new System.Drawing.Size(628, 165);
+            this.input.TabIndex = 27;
+            this.input.Text = "";
+            this.input.TextChanged += new System.EventHandler(this.input_TextChanged);
+            this.input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.input.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -614,6 +603,7 @@ namespace Calc
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(628, 804);
+            this.Controls.Add(this.input);
             this.Controls.Add(this.buttonDot);
             this.Controls.Add(this.buttonDigit0);
             this.Controls.Add(this.buttonSwap);
@@ -641,7 +631,6 @@ namespace Calc
             this.Controls.Add(this.buttonE);
             this.Controls.Add(this.buttonPI);
             this.Controls.Add(this.buttonLog);
-            this.Controls.Add(this.input);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main";
@@ -651,7 +640,6 @@ namespace Calc
 
         }
 
-        private System.Windows.Forms.TextBox input;
         private System.Windows.Forms.Button buttonLog;
         private System.Windows.Forms.Button buttonPI;
         private System.Windows.Forms.Button buttonE;
@@ -679,6 +667,7 @@ namespace Calc
         private System.Windows.Forms.Button buttonDigit0;
         private System.Windows.Forms.Button buttonSwap;
         private System.Windows.Forms.Button buttonDot;
+        private System.Windows.Forms.RichTextBox input;
     }
 }
 

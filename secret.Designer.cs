@@ -1,20 +1,8 @@
-﻿using LibVLCSharp.Shared;
-using System.IO;
-using System.Windows.Forms;
-
-namespace Calc
+﻿namespace Calc
 {
     partial class secret
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,47 +12,38 @@ namespace Calc
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.videoView1 = new LibVLCSharp.WinForms.VideoView();
-            ((System.ComponentModel.ISupportInitialize)(this.videoView1)).BeginInit();
+            this.videoView = new LibVLCSharp.WinForms.VideoView();
+            ((System.ComponentModel.ISupportInitialize)(this.videoView)).BeginInit();
             this.SuspendLayout();
             // 
-            // videoView1
+            // videoView
             // 
-            this.videoView1.BackColor = System.Drawing.Color.Black;
-            this.videoView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.videoView1.Location = new System.Drawing.Point(0, 0);
-            this.videoView1.MediaPlayer = null;
-            this.videoView1.Name = "videoView1";
-            this.videoView1.Size = new System.Drawing.Size(778, 394);
-            this.videoView1.TabIndex = 0;
-            this.videoView1.Text = "videoView1";
+            this.videoView.BackColor = System.Drawing.Color.Black;
+            this.videoView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.videoView.Location = new System.Drawing.Point(0, 0);
+            this.videoView.MediaPlayer = null;
+            this.videoView.Name = "videoView1";
+            this.videoView.Size = new System.Drawing.Size(678, 394);
+            this.videoView.TabIndex = 0;
+            this.videoView.Text = "videoView1";
             // 
             // secret
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 394);
-            this.Controls.Add(this.videoView1);
-            this.MaximumSize = new System.Drawing.Size(800, 450);
-            this.MinimumSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(678, 394);
+            this.Controls.Add(this.videoView);
+            this.MaximumSize = new System.Drawing.Size(700, 450);
+            this.MinimumSize = new System.Drawing.Size(700, 450);
             this.Name = "secret";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "secret";
-            ((System.ComponentModel.ISupportInitialize)(this.videoView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.videoView)).EndInit();
             this.ResumeLayout(false);
 
         }
-
-        #endregion
-
-        private LibVLCSharp.WinForms.VideoView videoView1;
+        private LibVLCSharp.WinForms.VideoView videoView;
     }
 }

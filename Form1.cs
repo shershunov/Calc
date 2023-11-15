@@ -10,50 +10,30 @@ namespace Calc
         public main()
         {
             InitializeComponent();
-            this.input.AutoSize = false;
+            this.input.SelectionAlignment = HorizontalAlignment.Right;
         }
+
         public void addDigitButtonClick(string digit)
         {
-            // Получаем позицию курсора в текстовом поле
             int cursorPosition = input.SelectionStart;
-
-            // Получаем текущий текст в текстовом поле
             string currentText = input.Text;
-
-            // Добавляем цифру (например, "1") в текущий текст на позицию курсора
             currentText = currentText.Insert(cursorPosition, digit);
-
-            // Обновляем текстовое поле с учетом добавленной цифры
             input.Text = currentText;
-
-            // Перемещаем курсор после вставленной цифры
             input.SelectionStart = cursorPosition + 1;
-
-            // Устанавливаем фокус на текстовом поле
             input.Focus();
         }
+
         private void deleteButton_Click()
         {
-            // Получаем позицию курсора в текстовом поле
             int cursorPosition = input.SelectionStart;
-
-            // Получаем текущий текст в текстовом поле
             string currentText = input.Text;
-
-            // Проверяем, что есть символы перед курсором
             if (cursorPosition > 0)
             {
-                // Удаляем символ слева от курсора
                 currentText = currentText.Remove(cursorPosition - 1, 1);
-
-                // Обновляем текстовое поле с учетом удаленной цифры
                 input.Text = currentText;
-
-                // Перемещаем курсор на предыдущую позицию
                 input.SelectionStart = cursorPosition - 1;
             }
 
-            // Устанавливаем фокус на текстовом поле
             input.Focus();
         }
 
@@ -141,6 +121,7 @@ namespace Calc
         {
             addDigitButtonClick("+");
         }
+
         void buttonEqual_Click(object sender, EventArgs e)
         {
             Expression e1 = new Expression(input.Text);
@@ -179,10 +160,12 @@ namespace Calc
             input.SelectionStart = input.Text.Length;
             input.Focus();
         }
+
         double ChangeSign(double number)
         {
             return -number;
         }
+
         private void buttonSwap_Click(object sender, EventArgs e)
         {
             try
@@ -191,6 +174,7 @@ namespace Calc
             }
             catch { }
         }
+
         private void Form1_KeyDown(object sender, KeyEventArgs  e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -207,9 +191,32 @@ namespace Calc
             }
         }
 
-        void AdjustFontSize(TextBox textBox)
+        void AdjustFontSize()
         {
-            if (textBox.Text == "1337")
+            if (input.Text.Length > 10)
+            {
+                input.Font = new Font(input.Font.FontFamily, 32, input.Font.Style);
+            }
+            if (input.Text.Length > 17)
+            {
+                input.Font = new Font(input.Font.FontFamily, 24, input.Font.Style);
+            }
+            if (input.Text.Length > 22)
+            {
+                input.Font = new Font(input.Font.FontFamily, 20, input.Font.Style);
+            }
+            if (input.Text.Length > 28)
+            {
+                input.Font = new Font(input.Font.FontFamily, 16, input.Font.Style);
+            }
+            if (input.Text.Length < 10)
+            {
+                input.Font = new Font(input.Font.FontFamily, 44, input.Font.Style);
+            }
+        }
+        void input_TextChanged(object sender, EventArgs e)
+        {
+            if (input.Text == "1337")
             {
                 DialogResult result = MessageBox.Show("Показать секретик?)", "Секретик", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 while (true)
@@ -226,36 +233,21 @@ namespace Calc
                     }
                 }
             }
-            if (textBox.Text.Length > 10)
-            {
-                textBox.Font = new Font(textBox.Font.FontFamily, 32, textBox.Font.Style);
-            }
-            if (textBox.Text.Length > 17)
-            {
-                textBox.Font = new Font(textBox.Font.FontFamily, 24, textBox.Font.Style);
-            }
-            if (textBox.Text.Length > 23)
-            {
-                textBox.Font = new Font(textBox.Font.FontFamily, 20, textBox.Font.Style);
-            }
-            if (textBox.Text.Length < 10)
-            {
-                textBox.Font = new Font(textBox.Font.FontFamily, 48, textBox.Font.Style);
-            }
-        }
-        void input_TextChanged(object sender, EventArgs e)
-        {
-            AdjustFontSize(input);
+            AdjustFontSize();
         }
 
         private void buttonLog_Click(object sender, EventArgs e)
         {
             addDigitButtonClick("log2()");
+            input.SelectionStart = input.Text.Length-1;
+            input.Focus();
         }
 
         private void buttonSQRT_Click(object sender, EventArgs e)
         {
             addDigitButtonClick("√()");
+            input.SelectionStart = input.Text.Length-1;
+            input.Focus();
         }
     }
 }

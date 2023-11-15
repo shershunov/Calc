@@ -23,6 +23,7 @@ namespace Calc
                 _libVLC.Dispose();
             }
         }
+
         public secret()
         {
             InitializeComponent();
@@ -30,9 +31,9 @@ namespace Calc
 
             _libVLC = new LibVLC();
             _mediaPlayer = new MediaPlayer(_libVLC);
-            videoView1.MediaPlayer = _mediaPlayer;
+            videoView.MediaPlayer = _mediaPlayer;
             var media = new Media(_libVLC, @"c:\video.mp4", FromType.FromPath);
-            videoView1.Dock = DockStyle.Fill;
+            videoView.Dock = DockStyle.Fill;
             _mediaPlayer.Scale = 0;
             _mediaPlayer.Play(media);
             this.FormClosing += MainForm_FormClosing;
