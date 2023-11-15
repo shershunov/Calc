@@ -48,8 +48,24 @@ namespace Calc
             this.buttonMultiply = new System.Windows.Forms.Button();
             this.buttonDivide = new System.Windows.Forms.Button();
             this.buttonBackSpace = new System.Windows.Forms.Button();
-            this.input = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // input
+            // 
+            this.input = new System.Windows.Forms.TextBox();
+            this.input.BackColor = System.Drawing.SystemColors.Control;
+            this.input.Font = new System.Drawing.Font("Arial", 48F);
+            this.input.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.input.Location = new System.Drawing.Point(0, 0);
+            this.input.Name = "input";
+            this.input.Size = new System.Drawing.Size(628, 150);
+            this.input.TabIndex = 27;
+            this.input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.input.TextChanged += new System.EventHandler(this.input_TextChanged);
+            this.input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.input.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.input.AutoSize = false;
+            this.input.Height = 150;
             // 
             // buttonLog
             // 
@@ -590,20 +606,6 @@ namespace Calc
             this.buttonBackSpace.TabIndex = 19;
             this.buttonBackSpace.UseVisualStyleBackColor = false;
             this.buttonBackSpace.Click += new System.EventHandler(this.buttonBackSpace_Click);
-            // 
-            // input
-            // 
-            this.input.BackColor = System.Drawing.SystemColors.Control;
-            this.input.Font = new System.Drawing.Font("Arial", 48F);
-            this.input.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.input.Location = new System.Drawing.Point(0, 0);
-            this.input.Name = "input";
-            this.input.Size = new System.Drawing.Size(628, 150);
-            this.input.TabIndex = 27;
-            this.input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.input.TextChanged += new System.EventHandler(this.input_TextChanged);
-            this.input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.input.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             // 
             // main
             // 
