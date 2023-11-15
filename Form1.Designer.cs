@@ -1,4 +1,7 @@
-﻿namespace Calc
+﻿using System.Drawing.Printing;
+using System.Windows.Forms;
+
+namespace Calc
 {
 
     partial class main

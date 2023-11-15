@@ -1,12 +1,41 @@
 ﻿using org.mariuszgromada.math.mxparser;
 using System;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Calc
 {
     public partial class main : Form
     {
+        public const int EM_GETRECT = 0xB2;
+        public const int EM_SETRECT = 0xB3;
+
+        [DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, ref RECT lParam);
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct RECT
+        {
+            public int Left;
+            public int Top;
+            public int Right;
+            public int Bottom;
+        }
+        public void CenterText(RichTextBox richTextBox)
+        {
+            RECT rect = new RECT();
+            SendMessage(richTextBox.Handle, EM_GETRECT, 0, ref rect);
+            int height = rect.Bottom - rect.Top;
+            int lineCount = richTextBox.GetLineFromCharIndex(richTextBox.TextLength) + 1;
+            int lineHeight = richTextBox.Font.Height;
+            int textHeight = lineCount * lineHeight;
+            int pad = (height - textHeight) / 2;
+            rect.Top += pad;
+            rect.Bottom -= pad;
+            SendMessage(richTextBox.Handle, EM_SETRECT, 0, ref rect);
+        }
+
         public main()
         {
             InitializeComponent();
@@ -213,6 +242,7 @@ namespace Calc
             {
                 input.Font = new Font(input.Font.FontFamily, 44, input.Font.Style);
             }
+            CenterText(input);
         }
         void input_TextChanged(object sender, EventArgs e)
         {
