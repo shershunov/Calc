@@ -34,6 +34,7 @@
             this.buttonMultiply = new System.Windows.Forms.Button();
             this.buttonDivide = new System.Windows.Forms.Button();
             this.buttonBackSpace = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // buttonLog
@@ -489,7 +490,7 @@
             this.input.Name = "input";
             this.input.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.input.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.input.Size = new System.Drawing.Size(626, 165);
+            this.input.Size = new System.Drawing.Size(632, 165);
             this.input.TabIndex = 27;
             this.input.Text = "";
             this.input.TextChanged += new System.EventHandler(this.input_TextChanged);
@@ -622,13 +623,22 @@
             this.buttonBackSpace.UseVisualStyleBackColor = false;
             this.buttonBackSpace.Click += new System.EventHandler(this.buttonBackSpace_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(39)))));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Location = new System.Drawing.Point(598, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(54, 165);
+            this.panel1.TabIndex = 28;
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(628, 804);
+            this.ClientSize = new System.Drawing.Size(638, 804);
             this.Controls.Add(this.input);
             this.Controls.Add(this.buttonDot);
             this.Controls.Add(this.buttonDigit0);
@@ -657,6 +667,7 @@
             this.Controls.Add(this.buttonE);
             this.Controls.Add(this.buttonPI);
             this.Controls.Add(this.buttonLog);
+            this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main";
@@ -694,6 +705,7 @@
         private System.Windows.Forms.Button buttonSwap;
         private System.Windows.Forms.Button buttonDot;
         private System.Windows.Forms.RichTextBox input;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

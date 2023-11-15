@@ -35,13 +35,14 @@ namespace Calc
             rect.Bottom -= pad;
             SendMessage(richTextBox.Handle, EM_SETRECT, 0, ref rect);
         }
-
+       
         public main()
         {
             InitializeComponent();
             this.input.SelectionAlignment = HorizontalAlignment.Right;
             this.MaximizeBox = false;
             this.Shown += new EventHandler(this.Form1_Shown);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void Form1_Shown(object sender, EventArgs e)
@@ -293,6 +294,5 @@ namespace Calc
             input.SelectionStart = input.Text.Length - 1;
             input.Focus();
         }
-
     }
 }
