@@ -595,6 +595,7 @@
             this.input.TextChanged += new System.EventHandler(this.input_TextChanged);
             this.input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.input.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.input.WordWrap = false;
             // 
             // main
             // 
