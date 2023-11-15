@@ -40,6 +40,13 @@ namespace Calc
         {
             InitializeComponent();
             this.input.SelectionAlignment = HorizontalAlignment.Right;
+            this.MaximizeBox = false;
+            this.Shown += new EventHandler(this.Form1_Shown);
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            input.Focus();
         }
 
         public void addDigitButtonClick(string digit)
@@ -62,7 +69,6 @@ namespace Calc
                 input.Text = currentText;
                 input.SelectionStart = cursorPosition - 1;
             }
-
             input.Focus();
         }
 
@@ -220,7 +226,6 @@ namespace Calc
             }
         }
 
-
         void AdjustFontSize()
         {
             if (input.Text.Length > 10)
@@ -245,6 +250,7 @@ namespace Calc
             }
             CenterText(input);
         }
+
         void input_TextChanged(object sender, EventArgs e)
         {
             if (input.Text == "1337")
@@ -280,5 +286,13 @@ namespace Calc
             input.SelectionStart = input.Text.Length - 1;
             input.Focus();
         }
+
+        private void buttonLn_Click(object sender, EventArgs e)
+        {
+            addDigitButtonClick("ln()");
+            input.SelectionStart = input.Text.Length - 1;
+            input.Focus();
+        }
+
     }
 }
