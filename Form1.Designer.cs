@@ -1,7 +1,4 @@
-﻿using System.Drawing.Printing;
-using System.Windows.Forms;
-
-namespace Calc
+﻿namespace Calc
 {
 
     partial class main
