@@ -209,16 +209,17 @@ namespace Calc
             if (e.KeyCode == Keys.Enter)
             {
                 buttonEqual_Click(sender, e);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
             }
-        }
-
-        private void Form1_KeyUp(object sender, KeyEventArgs e)
-        {
             if (e.KeyCode == Keys.C)
             {
                 buttonClear_Click(sender, e);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
             }
         }
+
 
         void AdjustFontSize()
         {

@@ -1,6 +1,7 @@
-﻿namespace Calc
-{
+﻿using System.Windows.Forms;
 
+namespace Calc
+{
     partial class main
     {
         private System.ComponentModel.IContainer components = null;
@@ -594,8 +595,6 @@
             this.input.Text = "";
             this.input.TextChanged += new System.EventHandler(this.input_TextChanged);
             this.input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.input.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
-            this.input.WordWrap = false;
             // 
             // main
             // 
