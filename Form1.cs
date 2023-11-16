@@ -74,54 +74,13 @@ namespace Calc
             input.Focus();
         }
 
-        private void buttonDigit1_Click(object sender, EventArgs e)
+        private void buttonDigit_Click(object sender, EventArgs e)
         {
-            addDigitButtonClick(1.ToString());
-        }
-
-        private void buttonDigit2_Click(object sender, EventArgs e)
-        {
-            addDigitButtonClick(2.ToString());
-        }
-
-        private void buttonDigit3_Click(object sender, EventArgs e)
-        {
-            addDigitButtonClick(3.ToString());
-        }
-
-        private void buttonDigit4_Click(object sender, EventArgs e)
-        {
-            addDigitButtonClick(4.ToString());
-        }
-
-        private void buttonDigit5_Click(object sender, EventArgs e)
-        {
-            addDigitButtonClick(5.ToString());
-        }
-
-        private void buttonDigit6_Click(object sender, EventArgs e)
-        {
-            addDigitButtonClick(6.ToString());
-        }
-
-        private void buttonDigit7_Click(object sender, EventArgs e)
-        {
-            addDigitButtonClick(7.ToString());
-        }
-
-        private void buttonDigit8_Click(object sender, EventArgs e)
-        {
-            addDigitButtonClick(8.ToString());
-        }
-
-        private void buttonDigit9_Click(object sender, EventArgs e)
-        {
-            addDigitButtonClick(9.ToString());
-        }
-
-        private void buttonDigit0_Click(object sender, EventArgs e)
-        {
-            addDigitButtonClick(0.ToString());
+            if (sender is Button button)
+            {
+                string buttonText = button.Text;
+                addDigitButtonClick(buttonText);
+            }
         }
 
         private void buttonBackSpace_Click(object sender, EventArgs e)

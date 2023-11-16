@@ -1,10 +1,16 @@
-﻿namespace Calc
+﻿using System;
+using System.Diagnostics;
+using System.Drawing;
+
+namespace Calc
 {
     partial class main
     {
         private System.ComponentModel.IContainer components = null;
+
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.buttonLog = new System.Windows.Forms.Button();
             this.buttonPI = new System.Windows.Forms.Button();
@@ -28,13 +34,13 @@
             this.buttonSwap = new System.Windows.Forms.Button();
             this.buttonDot = new System.Windows.Forms.Button();
             this.input = new System.Windows.Forms.RichTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.buttonEqual = new System.Windows.Forms.Button();
             this.buttonPlus = new System.Windows.Forms.Button();
             this.buttonMinus = new System.Windows.Forms.Button();
             this.buttonMultiply = new System.Windows.Forms.Button();
             this.buttonDivide = new System.Windows.Forms.Button();
             this.buttonBackSpace = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // buttonLog
@@ -245,7 +251,7 @@
             this.buttonDigit7.TabIndex = 13;
             this.buttonDigit7.Text = "7";
             this.buttonDigit7.UseVisualStyleBackColor = false;
-            this.buttonDigit7.Click += new System.EventHandler(this.buttonDigit7_Click);
+            this.buttonDigit7.Click += new System.EventHandler(this.buttonDigit_Click);
             // 
             // buttonDigit8
             // 
@@ -266,7 +272,7 @@
             this.buttonDigit8.TabIndex = 12;
             this.buttonDigit8.Text = "8";
             this.buttonDigit8.UseVisualStyleBackColor = false;
-            this.buttonDigit8.Click += new System.EventHandler(this.buttonDigit8_Click);
+            this.buttonDigit8.Click += new System.EventHandler(this.buttonDigit_Click);
             // 
             // buttonDigit9
             // 
@@ -287,7 +293,7 @@
             this.buttonDigit9.TabIndex = 11;
             this.buttonDigit9.Text = "9";
             this.buttonDigit9.UseVisualStyleBackColor = false;
-            this.buttonDigit9.Click += new System.EventHandler(this.buttonDigit9_Click);
+            this.buttonDigit9.Click += new System.EventHandler(this.buttonDigit_Click);
             // 
             // buttonDigit4
             // 
@@ -308,7 +314,7 @@
             this.buttonDigit4.TabIndex = 8;
             this.buttonDigit4.Text = "4";
             this.buttonDigit4.UseVisualStyleBackColor = false;
-            this.buttonDigit4.Click += new System.EventHandler(this.buttonDigit4_Click);
+            this.buttonDigit4.Click += new System.EventHandler(this.buttonDigit_Click);
             // 
             // buttonDigit5
             // 
@@ -329,7 +335,7 @@
             this.buttonDigit5.TabIndex = 7;
             this.buttonDigit5.Text = "5";
             this.buttonDigit5.UseVisualStyleBackColor = false;
-            this.buttonDigit5.Click += new System.EventHandler(this.buttonDigit5_Click);
+            this.buttonDigit5.Click += new System.EventHandler(this.buttonDigit_Click);
             // 
             // buttonDigit6
             // 
@@ -350,7 +356,7 @@
             this.buttonDigit6.TabIndex = 6;
             this.buttonDigit6.Text = "6";
             this.buttonDigit6.UseVisualStyleBackColor = false;
-            this.buttonDigit6.Click += new System.EventHandler(this.buttonDigit6_Click);
+            this.buttonDigit6.Click += new System.EventHandler(this.buttonDigit_Click);
             // 
             // buttonDigit1
             // 
@@ -371,7 +377,7 @@
             this.buttonDigit1.TabIndex = 5;
             this.buttonDigit1.Text = "1";
             this.buttonDigit1.UseVisualStyleBackColor = false;
-            this.buttonDigit1.Click += new System.EventHandler(this.buttonDigit1_Click);
+            this.buttonDigit1.Click += new System.EventHandler(this.buttonDigit_Click);
             // 
             // buttonDigit2
             // 
@@ -392,7 +398,7 @@
             this.buttonDigit2.TabIndex = 4;
             this.buttonDigit2.Text = "2";
             this.buttonDigit2.UseVisualStyleBackColor = false;
-            this.buttonDigit2.Click += new System.EventHandler(this.buttonDigit2_Click);
+            this.buttonDigit2.Click += new System.EventHandler(this.buttonDigit_Click);
             // 
             // buttonDigit3
             // 
@@ -413,7 +419,7 @@
             this.buttonDigit3.TabIndex = 3;
             this.buttonDigit3.Text = "3";
             this.buttonDigit3.UseVisualStyleBackColor = false;
-            this.buttonDigit3.Click += new System.EventHandler(this.buttonDigit3_Click);
+            this.buttonDigit3.Click += new System.EventHandler(this.buttonDigit_Click);
             // 
             // buttonDigit0
             // 
@@ -434,7 +440,7 @@
             this.buttonDigit0.TabIndex = 1;
             this.buttonDigit0.Text = "0";
             this.buttonDigit0.UseVisualStyleBackColor = false;
-            this.buttonDigit0.Click += new System.EventHandler(this.buttonDigit0_Click);
+            this.buttonDigit0.Click += new System.EventHandler(this.buttonDigit_Click);
             // 
             // buttonSwap
             // 
@@ -496,6 +502,15 @@
             this.input.TextChanged += new System.EventHandler(this.input_TextChanged);
             this.input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(39)))));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Location = new System.Drawing.Point(598, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(54, 165);
+            this.panel1.TabIndex = 28;
+            // 
             // buttonEqual
             // 
             this.buttonEqual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
@@ -520,7 +535,7 @@
             // buttonPlus
             // 
             this.buttonPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
-            this.buttonPlus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlus.BackgroundImage")));
+            this.buttonPlus.BackgroundImage = global::Calc.Properties.Resources.plus;
             this.buttonPlus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonPlus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPlus.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
@@ -623,15 +638,6 @@
             this.buttonBackSpace.UseVisualStyleBackColor = false;
             this.buttonBackSpace.Click += new System.EventHandler(this.buttonBackSpace_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(39)))));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.Location = new System.Drawing.Point(598, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(54, 165);
-            this.panel1.TabIndex = 28;
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -669,7 +675,9 @@
             this.Controls.Add(this.buttonLog);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Калькулятор";
