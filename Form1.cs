@@ -230,11 +230,11 @@ namespace Calc
 
         void AdjustFontSize()
         {
-            if (input.Text.Length > 10)
+            if (input.Text.Length > 12)
             {
                 input.Font = new Font(input.Font.FontFamily, 32, input.Font.Style);
             }
-            if (input.Text.Length > 17)
+            if (input.Text.Length > 16)
             {
                 input.Font = new Font(input.Font.FontFamily, 24, input.Font.Style);
             }
@@ -246,7 +246,7 @@ namespace Calc
             {
                 input.Font = new Font(input.Font.FontFamily, 16, input.Font.Style);
             }
-            if (input.Text.Length < 10)
+            if (input.Text.Length < 12)
             {
                 input.Font = new Font(input.Font.FontFamily, 44, input.Font.Style);
             }

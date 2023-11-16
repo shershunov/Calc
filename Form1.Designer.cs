@@ -42,7 +42,7 @@
             this.buttonLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonLog.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLog.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonLog.FlatAppearance.BorderSize = 3;
+            this.buttonLog.FlatAppearance.BorderSize = 2;
             this.buttonLog.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonLog.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonLog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -63,7 +63,7 @@
             this.buttonPI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonPI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPI.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonPI.FlatAppearance.BorderSize = 3;
+            this.buttonPI.FlatAppearance.BorderSize = 2;
             this.buttonPI.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonPI.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonPI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -84,7 +84,7 @@
             this.buttonE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonE.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonE.FlatAppearance.BorderSize = 3;
+            this.buttonE.FlatAppearance.BorderSize = 2;
             this.buttonE.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonE.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -105,7 +105,7 @@
             this.buttonCP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonCP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCP.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonCP.FlatAppearance.BorderSize = 3;
+            this.buttonCP.FlatAppearance.BorderSize = 2;
             this.buttonCP.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonCP.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonCP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -126,7 +126,7 @@
             this.buttonOP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonOP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOP.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonOP.FlatAppearance.BorderSize = 3;
+            this.buttonOP.FlatAppearance.BorderSize = 2;
             this.buttonOP.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonOP.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonOP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -147,7 +147,7 @@
             this.buttonSQRT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonSQRT.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSQRT.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonSQRT.FlatAppearance.BorderSize = 3;
+            this.buttonSQRT.FlatAppearance.BorderSize = 2;
             this.buttonSQRT.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonSQRT.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonSQRT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -168,7 +168,7 @@
             this.buttonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonClear.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonClear.FlatAppearance.BorderSize = 3;
+            this.buttonClear.FlatAppearance.BorderSize = 2;
             this.buttonClear.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonClear.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -189,7 +189,7 @@
             this.buttonRTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonRTP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonRTP.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonRTP.FlatAppearance.BorderSize = 3;
+            this.buttonRTP.FlatAppearance.BorderSize = 2;
             this.buttonRTP.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonRTP.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonRTP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -210,7 +210,7 @@
             this.buttonLn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonLn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLn.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonLn.FlatAppearance.BorderSize = 3;
+            this.buttonLn.FlatAppearance.BorderSize = 2;
             this.buttonLn.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonLn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonLn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -231,7 +231,7 @@
             this.buttonDigit7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDigit7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDigit7.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDigit7.FlatAppearance.BorderSize = 3;
+            this.buttonDigit7.FlatAppearance.BorderSize = 2;
             this.buttonDigit7.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDigit7.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDigit7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -252,7 +252,7 @@
             this.buttonDigit8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDigit8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDigit8.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDigit8.FlatAppearance.BorderSize = 3;
+            this.buttonDigit8.FlatAppearance.BorderSize = 2;
             this.buttonDigit8.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDigit8.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDigit8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -273,7 +273,7 @@
             this.buttonDigit9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDigit9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDigit9.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDigit9.FlatAppearance.BorderSize = 3;
+            this.buttonDigit9.FlatAppearance.BorderSize = 2;
             this.buttonDigit9.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDigit9.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDigit9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -294,7 +294,7 @@
             this.buttonDigit4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDigit4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDigit4.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDigit4.FlatAppearance.BorderSize = 3;
+            this.buttonDigit4.FlatAppearance.BorderSize = 2;
             this.buttonDigit4.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDigit4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDigit4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -315,7 +315,7 @@
             this.buttonDigit5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDigit5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDigit5.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDigit5.FlatAppearance.BorderSize = 3;
+            this.buttonDigit5.FlatAppearance.BorderSize = 2;
             this.buttonDigit5.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDigit5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDigit5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -336,7 +336,7 @@
             this.buttonDigit6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDigit6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDigit6.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDigit6.FlatAppearance.BorderSize = 3;
+            this.buttonDigit6.FlatAppearance.BorderSize = 2;
             this.buttonDigit6.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDigit6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDigit6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -357,7 +357,7 @@
             this.buttonDigit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDigit1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDigit1.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDigit1.FlatAppearance.BorderSize = 3;
+            this.buttonDigit1.FlatAppearance.BorderSize = 2;
             this.buttonDigit1.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDigit1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDigit1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -378,7 +378,7 @@
             this.buttonDigit2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDigit2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDigit2.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDigit2.FlatAppearance.BorderSize = 3;
+            this.buttonDigit2.FlatAppearance.BorderSize = 2;
             this.buttonDigit2.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDigit2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDigit2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -399,7 +399,7 @@
             this.buttonDigit3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDigit3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDigit3.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDigit3.FlatAppearance.BorderSize = 3;
+            this.buttonDigit3.FlatAppearance.BorderSize = 2;
             this.buttonDigit3.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDigit3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDigit3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -420,7 +420,7 @@
             this.buttonDigit0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDigit0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDigit0.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDigit0.FlatAppearance.BorderSize = 3;
+            this.buttonDigit0.FlatAppearance.BorderSize = 2;
             this.buttonDigit0.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDigit0.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDigit0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -441,7 +441,7 @@
             this.buttonSwap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonSwap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSwap.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonSwap.FlatAppearance.BorderSize = 3;
+            this.buttonSwap.FlatAppearance.BorderSize = 2;
             this.buttonSwap.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonSwap.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonSwap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -462,7 +462,7 @@
             this.buttonDot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(49)))));
             this.buttonDot.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDot.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDot.FlatAppearance.BorderSize = 3;
+            this.buttonDot.FlatAppearance.BorderSize = 2;
             this.buttonDot.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDot.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDot.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -503,7 +503,7 @@
             this.buttonEqual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonEqual.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonEqual.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonEqual.FlatAppearance.BorderSize = 3;
+            this.buttonEqual.FlatAppearance.BorderSize = 2;
             this.buttonEqual.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonEqual.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonEqual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -524,7 +524,7 @@
             this.buttonPlus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonPlus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPlus.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonPlus.FlatAppearance.BorderSize = 3;
+            this.buttonPlus.FlatAppearance.BorderSize = 2;
             this.buttonPlus.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonPlus.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonPlus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -545,7 +545,7 @@
             this.buttonMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonMinus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonMinus.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonMinus.FlatAppearance.BorderSize = 3;
+            this.buttonMinus.FlatAppearance.BorderSize = 2;
             this.buttonMinus.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonMinus.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonMinus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -566,7 +566,7 @@
             this.buttonMultiply.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonMultiply.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonMultiply.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonMultiply.FlatAppearance.BorderSize = 3;
+            this.buttonMultiply.FlatAppearance.BorderSize = 2;
             this.buttonMultiply.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonMultiply.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonMultiply.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -588,7 +588,7 @@
             this.buttonDivide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDivide.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDivide.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonDivide.FlatAppearance.BorderSize = 3;
+            this.buttonDivide.FlatAppearance.BorderSize = 2;
             this.buttonDivide.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonDivide.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonDivide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
@@ -609,7 +609,7 @@
             this.buttonBackSpace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonBackSpace.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonBackSpace.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.buttonBackSpace.FlatAppearance.BorderSize = 3;
+            this.buttonBackSpace.FlatAppearance.BorderSize = 2;
             this.buttonBackSpace.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
             this.buttonBackSpace.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.buttonBackSpace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
