@@ -22,6 +22,7 @@ namespace Calc
             public int Right;
             public int Bottom;
         }
+
         public void CenterText(RichTextBox richTextBox)
         {
             RECT rect = new RECT();
@@ -276,22 +277,25 @@ namespace Calc
 
         private void buttonLog_Click(object sender, EventArgs e)
         {
+            int cursorPosition = input.SelectionStart;
             addDigitButtonClick("log2()");
-            input.SelectionStart = input.Text.Length - 1;
+            input.SelectionStart = cursorPosition + 5;
             input.Focus();
         }
 
         private void buttonSQRT_Click(object sender, EventArgs e)
         {
+            int cursorPosition = input.SelectionStart;
             addDigitButtonClick("√()");
-            input.SelectionStart = input.Text.Length - 1;
+            input.SelectionStart = cursorPosition + 2;
             input.Focus();
         }
 
         private void buttonLn_Click(object sender, EventArgs e)
         {
+            int cursorPosition = input.SelectionStart;
             addDigitButtonClick("ln()");
-            input.SelectionStart = input.Text.Length - 1;
+            input.SelectionStart = cursorPosition + 3;
             input.Focus();
         }
     }
