@@ -61,16 +61,6 @@ namespace Calc {
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Point, аналогичного {X=17,Y=17}.
-        /// </summary>
-        public static System.Drawing.Point animationTimer_TrayLocation {
-            get {
-                object obj = ResourceManager.GetObject("animationTimer.TrayLocation", resourceCulture);
-                return ((System.Drawing.Point)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap buttonBackSpace_BackgroundImage {
@@ -116,6 +106,16 @@ namespace Calc {
         public static System.Drawing.Bitmap buttonMultiply_BackgroundImage {
             get {
                 object obj = ResourceManager.GetObject("buttonMultiply.BackgroundImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap buttonPlus_BackgroundImage {
+            get {
+                object obj = ResourceManager.GetObject("buttonPlus.BackgroundImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
