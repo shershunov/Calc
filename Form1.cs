@@ -1,6 +1,8 @@
 ﻿using org.mariuszgromada.math.mxparser;
 using System;
 using System.Drawing;
+using System.Linq;
+using System.Reflection.Emit;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -36,7 +38,7 @@ namespace Calc
             rect.Bottom -= pad;
             SendMessage(richTextBox.Handle, EM_SETRECT, 0, ref rect);
         }
-       
+
         public main()
         {
             InitializeComponent();
@@ -211,10 +213,52 @@ namespace Calc
             }
             CenterText(input);
         }
+        public static long ConvertToDecimal(string numberString)
+        {
+            if (string.IsNullOrWhiteSpace(numberString))
+            {
+                throw new ArgumentException("Строка не может быть пустой.");
+            }
 
+            numberString = numberString.ToUpper(); // Приведение к верхнему регистру для упрощения проверки
+
+            // Проверка на двоичное число
+            if (numberString.All(c => c == '0' || c == '1'))
+            {
+                return Convert.ToInt64(numberString, 2);
+            }
+
+            // Проверка на шестнадцатеричное число
+            if (numberString.All(c => (c >= '0' && c <= '9') || (c >= 'A' && c <= 'F')))
+            {
+                return Convert.ToInt64(numberString, 16);
+            }
+
+            return Convert.ToInt64(numberString, 10);
+        }
         void input_TextChanged(object sender, EventArgs e)
         {
             AdjustFontSize();
+            string str = input.Text;
+            if (str.Length > 0)
+            {
+                try
+                {
+                    long bits = long.Parse(str);
+                    string hexNumber = bits.ToString("X");
+                    label1.Text = $"HEX: {hexNumber}";
+                    string binaryNumber = Convert.ToString(bits, 2);
+                    label2.Text = $"BIN: {binaryNumber}";
+                    label3.Text = $"DEC: {ConvertToDecimal(str)}";
+                }
+                catch { }
+            }
+            if (str.Length == 0)
+            {
+                label1.Text = "HEX: 0";
+                label2.Text = "BIN: 0";
+                label3.Text = "DEC: 0";
+            }
         }
 
         private void buttonLog_Click(object sender, EventArgs e)
@@ -239,6 +283,21 @@ namespace Calc
             addDigitButtonClick("ln()");
             input.SelectionStart = cursorPosition + 3;
             input.Focus();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            input.Text = label1.Text.Substring(5);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            input.Text = label2.Text.Substring(5);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            input.Text = label3.Text.Substring(5);
         }
     }
 }

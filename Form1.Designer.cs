@@ -10,7 +10,6 @@ namespace Calc
 
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.buttonLog = new System.Windows.Forms.Button();
             this.buttonPI = new System.Windows.Forms.Button();
@@ -41,6 +40,9 @@ namespace Calc
             this.buttonMultiply = new System.Windows.Forms.Button();
             this.buttonDivide = new System.Windows.Forms.Button();
             this.buttonBackSpace = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonLog
@@ -56,7 +58,7 @@ namespace Calc
             this.buttonLog.Font = new System.Drawing.Font("Dubai", 13F, System.Drawing.FontStyle.Bold);
             this.buttonLog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonLog.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonLog.Location = new System.Drawing.Point(40, 200);
+            this.buttonLog.Location = new System.Drawing.Point(41, 257);
             this.buttonLog.Name = "buttonLog";
             this.buttonLog.Size = new System.Drawing.Size(75, 75);
             this.buttonLog.TabIndex = 26;
@@ -77,7 +79,7 @@ namespace Calc
             this.buttonPI.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonPI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonPI.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonPI.Location = new System.Drawing.Point(140, 200);
+            this.buttonPI.Location = new System.Drawing.Point(141, 257);
             this.buttonPI.Name = "buttonPI";
             this.buttonPI.Size = new System.Drawing.Size(75, 75);
             this.buttonPI.TabIndex = 25;
@@ -98,7 +100,7 @@ namespace Calc
             this.buttonE.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonE.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonE.Location = new System.Drawing.Point(240, 200);
+            this.buttonE.Location = new System.Drawing.Point(241, 257);
             this.buttonE.Name = "buttonE";
             this.buttonE.Size = new System.Drawing.Size(75, 75);
             this.buttonE.TabIndex = 24;
@@ -119,7 +121,7 @@ namespace Calc
             this.buttonCP.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonCP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonCP.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonCP.Location = new System.Drawing.Point(240, 300);
+            this.buttonCP.Location = new System.Drawing.Point(241, 357);
             this.buttonCP.Name = "buttonCP";
             this.buttonCP.Size = new System.Drawing.Size(75, 75);
             this.buttonCP.TabIndex = 23;
@@ -140,7 +142,7 @@ namespace Calc
             this.buttonOP.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonOP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonOP.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonOP.Location = new System.Drawing.Point(140, 300);
+            this.buttonOP.Location = new System.Drawing.Point(141, 357);
             this.buttonOP.Name = "buttonOP";
             this.buttonOP.Size = new System.Drawing.Size(75, 75);
             this.buttonOP.TabIndex = 22;
@@ -161,7 +163,7 @@ namespace Calc
             this.buttonSQRT.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonSQRT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonSQRT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonSQRT.Location = new System.Drawing.Point(40, 300);
+            this.buttonSQRT.Location = new System.Drawing.Point(41, 357);
             this.buttonSQRT.Name = "buttonSQRT";
             this.buttonSQRT.Size = new System.Drawing.Size(75, 75);
             this.buttonSQRT.TabIndex = 21;
@@ -182,7 +184,7 @@ namespace Calc
             this.buttonClear.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonClear.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonClear.Location = new System.Drawing.Point(340, 200);
+            this.buttonClear.Location = new System.Drawing.Point(341, 257);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 75);
             this.buttonClear.TabIndex = 20;
@@ -203,7 +205,7 @@ namespace Calc
             this.buttonRTP.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonRTP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonRTP.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonRTP.Location = new System.Drawing.Point(340, 300);
+            this.buttonRTP.Location = new System.Drawing.Point(341, 357);
             this.buttonRTP.Name = "buttonRTP";
             this.buttonRTP.Size = new System.Drawing.Size(75, 75);
             this.buttonRTP.TabIndex = 18;
@@ -224,7 +226,7 @@ namespace Calc
             this.buttonLn.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonLn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonLn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonLn.Location = new System.Drawing.Point(40, 400);
+            this.buttonLn.Location = new System.Drawing.Point(41, 457);
             this.buttonLn.Name = "buttonLn";
             this.buttonLn.Size = new System.Drawing.Size(75, 75);
             this.buttonLn.TabIndex = 14;
@@ -245,7 +247,7 @@ namespace Calc
             this.buttonDigit7.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDigit7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDigit7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDigit7.Location = new System.Drawing.Point(140, 400);
+            this.buttonDigit7.Location = new System.Drawing.Point(141, 457);
             this.buttonDigit7.Name = "buttonDigit7";
             this.buttonDigit7.Size = new System.Drawing.Size(75, 75);
             this.buttonDigit7.TabIndex = 13;
@@ -266,7 +268,7 @@ namespace Calc
             this.buttonDigit8.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDigit8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDigit8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDigit8.Location = new System.Drawing.Point(240, 400);
+            this.buttonDigit8.Location = new System.Drawing.Point(241, 457);
             this.buttonDigit8.Name = "buttonDigit8";
             this.buttonDigit8.Size = new System.Drawing.Size(75, 75);
             this.buttonDigit8.TabIndex = 12;
@@ -287,7 +289,7 @@ namespace Calc
             this.buttonDigit9.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDigit9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDigit9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDigit9.Location = new System.Drawing.Point(340, 400);
+            this.buttonDigit9.Location = new System.Drawing.Point(341, 457);
             this.buttonDigit9.Name = "buttonDigit9";
             this.buttonDigit9.Size = new System.Drawing.Size(75, 75);
             this.buttonDigit9.TabIndex = 11;
@@ -308,7 +310,7 @@ namespace Calc
             this.buttonDigit4.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDigit4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDigit4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDigit4.Location = new System.Drawing.Point(140, 500);
+            this.buttonDigit4.Location = new System.Drawing.Point(141, 557);
             this.buttonDigit4.Name = "buttonDigit4";
             this.buttonDigit4.Size = new System.Drawing.Size(75, 75);
             this.buttonDigit4.TabIndex = 8;
@@ -329,7 +331,7 @@ namespace Calc
             this.buttonDigit5.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDigit5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDigit5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDigit5.Location = new System.Drawing.Point(240, 500);
+            this.buttonDigit5.Location = new System.Drawing.Point(241, 557);
             this.buttonDigit5.Name = "buttonDigit5";
             this.buttonDigit5.Size = new System.Drawing.Size(75, 75);
             this.buttonDigit5.TabIndex = 7;
@@ -350,7 +352,7 @@ namespace Calc
             this.buttonDigit6.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDigit6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDigit6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDigit6.Location = new System.Drawing.Point(340, 500);
+            this.buttonDigit6.Location = new System.Drawing.Point(341, 557);
             this.buttonDigit6.Name = "buttonDigit6";
             this.buttonDigit6.Size = new System.Drawing.Size(75, 75);
             this.buttonDigit6.TabIndex = 6;
@@ -371,7 +373,7 @@ namespace Calc
             this.buttonDigit1.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDigit1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDigit1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDigit1.Location = new System.Drawing.Point(140, 600);
+            this.buttonDigit1.Location = new System.Drawing.Point(141, 657);
             this.buttonDigit1.Name = "buttonDigit1";
             this.buttonDigit1.Size = new System.Drawing.Size(75, 75);
             this.buttonDigit1.TabIndex = 5;
@@ -392,7 +394,7 @@ namespace Calc
             this.buttonDigit2.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDigit2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDigit2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDigit2.Location = new System.Drawing.Point(240, 600);
+            this.buttonDigit2.Location = new System.Drawing.Point(241, 657);
             this.buttonDigit2.Name = "buttonDigit2";
             this.buttonDigit2.Size = new System.Drawing.Size(75, 75);
             this.buttonDigit2.TabIndex = 4;
@@ -413,7 +415,7 @@ namespace Calc
             this.buttonDigit3.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDigit3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDigit3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDigit3.Location = new System.Drawing.Point(340, 600);
+            this.buttonDigit3.Location = new System.Drawing.Point(341, 657);
             this.buttonDigit3.Name = "buttonDigit3";
             this.buttonDigit3.Size = new System.Drawing.Size(75, 75);
             this.buttonDigit3.TabIndex = 3;
@@ -434,7 +436,7 @@ namespace Calc
             this.buttonDigit0.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDigit0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDigit0.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDigit0.Location = new System.Drawing.Point(240, 700);
+            this.buttonDigit0.Location = new System.Drawing.Point(241, 757);
             this.buttonDigit0.Name = "buttonDigit0";
             this.buttonDigit0.Size = new System.Drawing.Size(75, 75);
             this.buttonDigit0.TabIndex = 1;
@@ -455,7 +457,7 @@ namespace Calc
             this.buttonSwap.Font = new System.Drawing.Font("Dubai", 14F, System.Drawing.FontStyle.Bold);
             this.buttonSwap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonSwap.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonSwap.Location = new System.Drawing.Point(140, 700);
+            this.buttonSwap.Location = new System.Drawing.Point(141, 757);
             this.buttonSwap.Name = "buttonSwap";
             this.buttonSwap.Size = new System.Drawing.Size(77, 75);
             this.buttonSwap.TabIndex = 2;
@@ -476,7 +478,7 @@ namespace Calc
             this.buttonDot.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold);
             this.buttonDot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDot.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDot.Location = new System.Drawing.Point(340, 700);
+            this.buttonDot.Location = new System.Drawing.Point(341, 757);
             this.buttonDot.Name = "buttonDot";
             this.buttonDot.Size = new System.Drawing.Size(75, 75);
             this.buttonDot.TabIndex = 0;
@@ -492,7 +494,7 @@ namespace Calc
             this.input.Font = new System.Drawing.Font("Arial", 44F);
             this.input.ForeColor = System.Drawing.Color.White;
             this.input.Location = new System.Drawing.Point(0, 0);
-            this.input.MaxLength = 30;
+            this.input.MaxLength = 19;
             this.input.Name = "input";
             this.input.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.input.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
@@ -525,7 +527,7 @@ namespace Calc
             this.buttonEqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEqual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonEqual.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonEqual.Location = new System.Drawing.Point(440, 700);
+            this.buttonEqual.Location = new System.Drawing.Point(441, 757);
             this.buttonEqual.Name = "buttonEqual";
             this.buttonEqual.Size = new System.Drawing.Size(150, 75);
             this.buttonEqual.TabIndex = 9;
@@ -546,7 +548,7 @@ namespace Calc
             this.buttonPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonPlus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonPlus.Location = new System.Drawing.Point(440, 600);
+            this.buttonPlus.Location = new System.Drawing.Point(441, 657);
             this.buttonPlus.Name = "buttonPlus";
             this.buttonPlus.Size = new System.Drawing.Size(150, 75);
             this.buttonPlus.TabIndex = 10;
@@ -567,7 +569,7 @@ namespace Calc
             this.buttonMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonMinus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonMinus.Location = new System.Drawing.Point(440, 500);
+            this.buttonMinus.Location = new System.Drawing.Point(441, 557);
             this.buttonMinus.Name = "buttonMinus";
             this.buttonMinus.Size = new System.Drawing.Size(150, 75);
             this.buttonMinus.TabIndex = 15;
@@ -589,7 +591,7 @@ namespace Calc
             this.buttonMultiply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonMultiply.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonMultiply.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonMultiply.Location = new System.Drawing.Point(440, 400);
+            this.buttonMultiply.Location = new System.Drawing.Point(441, 457);
             this.buttonMultiply.Name = "buttonMultiply";
             this.buttonMultiply.Size = new System.Drawing.Size(150, 75);
             this.buttonMultiply.TabIndex = 16;
@@ -610,7 +612,7 @@ namespace Calc
             this.buttonDivide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDivide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonDivide.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDivide.Location = new System.Drawing.Point(440, 300);
+            this.buttonDivide.Location = new System.Drawing.Point(441, 357);
             this.buttonDivide.Name = "buttonDivide";
             this.buttonDivide.Size = new System.Drawing.Size(150, 75);
             this.buttonDivide.TabIndex = 17;
@@ -631,12 +633,48 @@ namespace Calc
             this.buttonBackSpace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBackSpace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
             this.buttonBackSpace.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonBackSpace.Location = new System.Drawing.Point(440, 200);
+            this.buttonBackSpace.Location = new System.Drawing.Point(441, 257);
             this.buttonBackSpace.Name = "buttonBackSpace";
             this.buttonBackSpace.Size = new System.Drawing.Size(150, 75);
             this.buttonBackSpace.TabIndex = 19;
             this.buttonBackSpace.UseVisualStyleBackColor = false;
             this.buttonBackSpace.Click += new System.EventHandler(this.buttonBackSpace_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
+            this.label1.Location = new System.Drawing.Point(12, 168);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 27);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "HEX: 0";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
+            this.label2.Location = new System.Drawing.Point(12, 195);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 27);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "BIN: 0";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Dubai", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(230)))));
+            this.label3.Location = new System.Drawing.Point(12, 222);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 27);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "DEC: 0";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // main
             // 
@@ -644,7 +682,10 @@ namespace Calc
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(638, 804);
+            this.ClientSize = new System.Drawing.Size(638, 844);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.input);
             this.Controls.Add(this.buttonDot);
             this.Controls.Add(this.buttonDigit0);
@@ -680,8 +721,9 @@ namespace Calc
             this.MaximizeBox = false;
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Калькулятор";
+            this.Text = "x";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -714,6 +756,9 @@ namespace Calc
         private System.Windows.Forms.Button buttonDot;
         private System.Windows.Forms.RichTextBox input;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
