@@ -214,23 +214,6 @@ namespace Calc
 
         void input_TextChanged(object sender, EventArgs e)
         {
-            if (input.Text == "1337")
-            {
-                DialogResult result = MessageBox.Show("Показать секретик?)", "Секретик", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                while (true)
-                {
-                    if (result == DialogResult.Yes)
-                    {
-                        secret secret = new secret();
-                        secret.Show();
-                        break;
-                    }
-                    else
-                    {
-                        result = MessageBox.Show("Показать секретик?)", "Секретик", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    }
-                }
-            }
             AdjustFontSize();
         }
 
